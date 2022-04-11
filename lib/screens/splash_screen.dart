@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:food_delivery_app/screens/home.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // navigate a page after 3 seconds
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const Home(),
+        ),
+      );
+    });
+
     return Scaffold(
       body: Stack(
         children: [
@@ -13,7 +25,19 @@ class SplashScreen extends StatelessWidget {
             fit: BoxFit.cover,
             height: double.infinity,
             width: double.infinity,
+          ),
+          Image.asset(
+            "assets/transparent.png",
+            fit: BoxFit.cover,
+            height: double.infinity,
+            width: double.infinity,
+          ),
+          Align(
             alignment: Alignment.center,
+            child: SvgPicture.asset(
+              "assets/splash_icon.svg",
+              width: MediaQuery.of(context).size.width * 0.75,
+            ),
           ),
         ],
       ),

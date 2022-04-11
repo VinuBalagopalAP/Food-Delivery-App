@@ -9,7 +9,10 @@ class Home extends StatelessWidget {
       body: Column(
         children: [
           const SizedBox(height: 80),
-          Text('Home', style: Theme.of(context).textTheme.headline6),
+          Text(
+            'Home',
+            style: Theme.of(context).textTheme.headline6,
+          ),
         ],
       ),
     );
