@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FoodAppTheme {
-  static const Color nearlyWhite = Color(0xFF09B44D);
-  static const Color primaryGreen = Color(0xFFD0F1DD);
-  static const Color lightGreen = Color(0xFFF6F6F6);
+  static const Color primaryGreen = Color(0xFF09B44D);
+  static const Color lightGreen = Color(0xFFD0F1DD);
+  static const Color nearlyWhite = Color(0xFFF6F6F6);
   static const Color textBlack = Color(0xFF262626);
 
   static ThemeData get theme => ThemeData(
@@ -29,5 +29,7 @@ class FoodAppTheme {
             color: textBlack,
           ),
         ),
+        // Scaffold Background Color
+        scaffoldBackgroundColor: FoodAppTheme.nearlyWhite,
       );
 }

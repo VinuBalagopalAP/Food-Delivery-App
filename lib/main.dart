@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/screens/splash_screen.dart';
+import 'package:food_delivery_app/screens/splash%20screen/splash_screen.dart';
 import 'package:food_delivery_app/utils/theme.dart';
 
 void main() => runApp(const MyApp());

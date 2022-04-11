@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_delivery_app/screens/home.dart';
+import 'package:food_delivery_app/screens/login/login_page.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -9,10 +9,10 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // navigate a page after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (_) => const Home(),
+          builder: (_) => const LoginPage(),
         ),
       );
     });
