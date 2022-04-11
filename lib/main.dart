@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/screens/home.dart';
+import 'package:food_delivery_app/screens/splash_screen.dart';
 import 'package:food_delivery_app/utils/theme.dart';
 
 void main() => runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: FoodAppTheme.theme,
       title: "Food Delivery App",
-      home: const Home(),
+      home: const SplashScreen(),
     );
   }
 }
